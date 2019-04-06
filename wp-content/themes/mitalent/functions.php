@@ -44,7 +44,7 @@ if ( ! function_exists( 'mitalent_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'mitalent' ),
+            'primary' => __( 'Menu' ),
 		) );
 
 		/*
@@ -162,10 +162,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 add_action('wp_enqueue_scripts', function() {
     wp_enqueue_style( 'GoogleFonts', 'https://fonts.googleapis.com/css?family=Nunito:400,700|Poppins:400,500" rel="stylesheet' );
     wp_enqueue_style( 'FontAwesome', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css' );
-//    wp_enqueue_style( 'Slick', get_template_directory_uri() . '/layouts/slick.css');
-//    wp_enqueue_style( 'Slick-theme', get_template_directory_uri() . '/layouts/slick-theme.css');
-//    wp_enqueue_style( 'Slicknav', get_template_directory_uri() . '/layouts/slicknav.css');
-    wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/layouts/main.css');
+    wp_enqueue_style( 'Slick', get_template_directory_uri() . '/dist/css/slick.css');
+    wp_enqueue_style( 'Slick-theme', get_template_directory_uri() . '/dist/css/slick-theme.css');
+    wp_enqueue_style( 'Slicknav', get_template_directory_uri() . '/dist/css/slicknav.css');
+    wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/dist/css/main.min.css');
 
 });
 
@@ -173,9 +173,9 @@ add_action('wp_enqueue_scripts', function() {
 add_action('wp_enqueue_scripts', function() {
     wp_enqueue_script( 'JQ', '//code.jquery.com/jquery-1.11.0.min.js');
     wp_enqueue_script( 'JQ-M', '//code.jquery.com/jquery-migrate-1.2.1.min.js');
-    wp_enqueue_script( 'JSMain', get_template_directory_uri() . '/js/main.js');
-//    wp_enqueue_script( 'Slick', get_template_directory_uri() . '/js/slick.min.js');
-//    wp_enqueue_script( 'Slicknav', get_template_directory_uri() . '/js/jquery.slicknav.js');
+    wp_enqueue_script( 'JSMain', get_template_directory_uri() . '/dist/js/main.js');
+    wp_enqueue_script( 'Slick', get_template_directory_uri() . '/js/slick.min.js');
+    wp_enqueue_script( 'Slicknav', get_template_directory_uri() . '/js/jquery.slicknav.js');
 });
 
 require get_template_directory() . '/inc/my-customizer.php';

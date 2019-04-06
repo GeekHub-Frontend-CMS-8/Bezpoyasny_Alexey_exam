@@ -1,7 +1,7 @@
 {
-  "name": "hw16",
+  "name": "exam",
   "version": "1.0.0",
-  "description": "hw_16",
+  "description": "exam",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

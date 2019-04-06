@@ -1,0 +1,52 @@
+.footer
+  margin-top: 170px
+
+  @media (max-width: 950px)
+    margin-top: 20px
+
+  &__logo
+    width: 100%
+    max-width: 200px
+
+  &__top, &__bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+    @media (max-width: 650px)
+      justify-content: center
+
+  &__mail
+    text-decoration: none
+    display: block
+    padding: 15px 0 15px 50px
+    border-left: 1px solid #f5f5f5
+    font: 700 $tiny-font-size $second-font-family
+    color: $second-text-color
+    text-transform: uppercase
+
+    @media (max-width: 650px)
+      text-align: center
+      padding: 10px 0 10px 0
+
+  &__top
+    padding-bottom: 40px
+
+    @media (max-width: 650px)
+      padding: 20px 0
+
+  &__bottom
+    padding: 50px 0
+    border-top: 1px solid #f5f5f5
+
+    @media (max-width: 650px)
+      padding: 20px 0
+
+    &-copyright
+      font: 400 $tiny-font-size $second-font-family
+      color: $primary-text-color
+
+      @media (max-width: 650px)
+        width: 100%
+        text-align: center

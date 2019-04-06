@@ -1,0 +1,132 @@
+.news
+
+  &__post-top-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__post-top-item
+    width: 31%
+    display: flex
+    justify-content: space-between
+
+    @media (max-width: 1000px)
+      width: 100%
+      margin-top: 15px
+
+  &__post-top-img-wrap
+    width: 100%
+    max-width: 200px
+    max-height: 120px
+    overflow: hidden
+
+    @media (max-width: 1000px)
+      max-width: 400px
+      max-height: 300px
+
+  &__post-top-img
+    width: 100%
+    height: auto
+
+  &__post-top-content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-left: 40px
+
+  &__post-top-title, &__post-bottom-right-title
+    font: 500 $small-font-size $primary-font-family
+    color: $second-text-color
+
+    @media (max-width: 1000px)
+      font-size: $medium-font-size
+
+    @media (max-width: 420px)
+      font-size: $small-font-size
+
+    &:hover
+      color: #87bbbc
+
+  &__post-top-date, &__post-bottom-right-date
+    font: 400 $extra-small-font-size $second-font-family
+    color: $primary-text-color
+
+  &__post-bottom
+    display: flex
+    justify-content: space-between
+    margin-top: 50px
+    flex-wrap: wrap
+
+  &__post-bottom-left
+    width: 65%
+
+    @media (max-width: 768px)
+      width: 100%
+
+  &__post-bottom-right
+    width: 30%
+
+    @media (max-width: 768px)
+      width: 100%
+
+  &__post-bottom-right-title
+    margin: 40px 0 30px 0
+
+  &__post-bottom-left-bottom-img-wrap
+    width: 100%
+    max-height: 200px
+    overflow: hidden
+    margin: 0 auto
+
+  &__post-bottom-left-bottom-img
+    width: 100%
+    height: auto
+    margin: 0 auto
+
+  &__post-bottom-right-img-wrap
+    margin: 0 auto
+
+  &__post-bottom-right-img
+    margin: 0 auto
+
+  &__post-bottom-left-top
+    display: flex
+    justify-content: space-between
+    width: 100%
+    max-height: 520px
+    overflow: hidden
+
+  &__post-bottom-left-top-content
+    background-color: $primary-bg-color
+    padding: 0 90px 0 60px
+    width: 35%
+
+  &__post-bottom-left-top-img-wrap
+    width: 65%
+
+  &__post-bottom-left-top-title
+    color: $third-text-color
+    line-height: 32px
+
+  &__post-bottom-left-top-date
+    color: $third-text-color
+    font-size: $extra-tiny-font-size
+
+  &__post-bottom-left-bottom
+    display: flex
+    justify-content: space-between
+    margin-top: 50px
+    flex-wrap: wrap
+
+    &-item
+      width: 47%
+      max-height: 520px
+
+      @media (max-width: 650px)
+        width: 100%
+        margin-bottom: 20px
+
+
+
+.permalink
+  text-decoration: none

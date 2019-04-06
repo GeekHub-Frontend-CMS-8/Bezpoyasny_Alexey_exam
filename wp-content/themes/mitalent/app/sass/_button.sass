@@ -1,0 +1,23 @@
+.button
+  display: block
+  width: 100%
+  max-width: 220px
+  margin: 60px auto 0 auto
+  padding: 20px 0
+  font: 700 $tiny-font-size $second-font-family
+  color: $third-text-color
+  text-transform: uppercase
+  text-decoration: none
+  text-align: center
+  background: $primary-bg-color
+  border-radius: 30px
+
+  @media (max-width: 650px)
+    padding: 20px 0
+    max-width: 140px
+    font-size: $extra-tiny-font-size
+    margin-top: 20px
+
+  &:hover
+    cursor: pointer
+    color: $primary-text-color

@@ -55,7 +55,7 @@ gulp.task('js', function () {
 gulp.task('browser-sync', function () {
     var files = ['./app/sass/**/*.sass', './*.php'];
     browserSync.init(files, {
-        proxy: 'http://localhost/test-exam/',
+        proxy: 'http://localhost/mitalent/',
         notify: false
     });
 });

@@ -6,31 +6,31 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package mitalent
+ * @package Akad
  */
 
 ?>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mitalent' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'mitalent' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'mitalent' ), 'mitalent', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+<footer class="footer container">
+    <div class="footer__top">
+        <div class="footer__logo">
+            <?php the_custom_logo(); ?>
+        </div>
+        <a class="footer__mail" href="mailto:alexey_b2007@ukr.net"><?php echo get_theme_mod('mailto'); ?></a>
+    </div>
+    <div class="footer__bottom">
+        <p class="footer__bottom-copyright"><?php echo get_theme_mod('copyright'); ?></p>
+        <nav class="social">
+            <ul class="social__list">
+                <li><a class="social__link" href="#"><?php echo get_theme_mod('footer-social-1'); ?></a></li>
+                <li><a class="social__link" href="#"><?php echo get_theme_mod('footer-social-2'); ?></a></li>
+                <li><a class="social__link" href="#"><?php echo get_theme_mod('footer-social-3'); ?></a></li>
+                <li><a class="social__link" href="#"><?php echo get_theme_mod('footer-social-4'); ?></a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
 
 <?php wp_footer(); ?>
-
 </body>
 </html>
